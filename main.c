@@ -10,5 +10,11 @@ int main()
   printf("Hello World %d \n", num2);
 
   printf("La valeur de num = %d ,  La valeur de num2 = %i ,  Prix = %.2f,  char value = %c \n", num, num2, price, c);
+
+num = 30;
+num2 = 40;
+c = 'a';
+
+  printf("New values : La valeur de num = %d ,  La valeur de num2 = %i ,  Prix = %.2f,  char value = %c \n", num, num2, price, c);
   return 0;
 }
