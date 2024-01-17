@@ -2,18 +2,15 @@
 
 int calculer_somme(int x, int y)
 {
-  int la_somme = 0;
-  la_somme = x + y;
+  return x + y;
 }
 
-int afficher()
+void afficher(int x)
 {
-  printf("Le résultat est : %d\n", la_somme);
+  printf("Le résultat est : %d\n", x);
 }
-
 
 int main()
 {
-  calculer_somme(5, 10);
-  afficher();
+  afficher(calculer_somme(2, 4));
 }
