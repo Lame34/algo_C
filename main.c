@@ -22,13 +22,22 @@ int le_plus_grand(int x, int y);
 
 int le_plus_petit(int x, int y);
 
+int est_impaire(int x);
+
 int main()
 {
-  // afficher(calculer_somme(2, 4));
-  // afficher_age(18);
-  // afficher_age(17);
-  // afficher_age(100);
-  // afficher_age(-10);
+  int a = 11;
+  int b = 10;
+  int c = 5;
+
+  printf("Le plus grand entre %d et %d est : %d \n", a, c, le_plus_grand);
+
+  printf("Le plus petit entre %d et %d est : %d \n", a, c, le_plus_petit);
+
+  if (est_impaire(a) == 0)
+    printf("%d est paire \n", a);
+  else
+    printf("%d est impair \n", a);
 }
 
 int est_plus_grand(int x, int y)
@@ -92,4 +101,9 @@ void afficher_age(int age)
     printf("%d : mineur\n", age);
   else
     printf("%d : erreur\n", age);
+}
+
+int est_impaire(int x)
+{
+  return x % 2;
 }
