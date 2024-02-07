@@ -64,7 +64,7 @@ int main()
 
   multiple(2, 58);
 
-  printf("La somme de 3 = %d\n", somme(3));
+  printf("La somme de 10 = %d\n", somme(10));
 }
 
 void afficher_resultat(int x)
