@@ -26,6 +26,8 @@ int est_impaire(int x);
 
 int multiple(int x, int y);
 
+int somme(int n);
+
 int main()
 {
   int a = 11;
@@ -61,6 +63,8 @@ int main()
     printf("%d est impaire \n", a);
 
   multiple(2, 58);
+
+  printf("La somme de 3 = %d\n", somme(3));
 }
 
 void afficher_resultat(int x)
@@ -162,4 +166,17 @@ int impair(int x)
     x = x + 2;
     x++;
   }
+}
+
+int somme(int n)
+{
+  int sum = 0;
+  int i = 0;
+
+  while (i <= n)
+  {
+    sum = sum + i;
+    i = i + 1;
+  }
+  return sum;
 }
