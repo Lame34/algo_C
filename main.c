@@ -13,6 +13,8 @@ int main()
   int a = 11;
   int b = 10;
   int c = 5;
+
+  int getDepartement(int numero);
   
   afficher_resultat(calculer_somme(3, 3));
  
@@ -79,22 +81,9 @@ int main()
 
 
 
-  int ile_de_france[] = {75, 77, 78, 91, 92, 93, 94, 95};
-  int aura[] = {1, 3,  7,  15,  26, 38, 42, 43, 63, 69, 73, 74};
-
-
-  printf("la liste des département de la région ile de france : ");
-  display_int_table(ile_de_france, 8);
-
-  new_line
-
-  printf("la liste des département de région Auvergne-Rhône-Alpes : ");
-  display_int_table(aura, 12);
-
-  new_line
-  
-
-
+    int numero;
+    printf("Entrez le numero du departement : ");
+    scanf("%d", &numero);
+    getDepartement(numero);
+    return 0;
 }	
-
-

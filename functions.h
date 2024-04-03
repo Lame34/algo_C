@@ -50,5 +50,6 @@ int factoriel_iterative(int n);
 
 int display_int_table(int t[], int len);
 
+int getDepartement(int numero);
 
 #endif

@@ -9,7 +9,7 @@ mon_programme: main.o functions.o arrays_handler.o
 
 # Règle pour la cible "main.o"
 main.o: main.c
-	$(CC) $(CFLAGS) < -c main.c 
+	$(CC) $(CFLAGS) -c main.c 
 
 # Règle pour la cible "functions.o"
 functions.o: functions.c 
